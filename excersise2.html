@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Debugging Challenge</title>
+</head>
+<body>
+    <h1>Debugging Challenge</h1>
+
+    <script>
+        // Fixed: Variables are correctly declared
+        let i = 5;
+        let j = 10;
+        let k = 25;
+
+        // Fixed: "Joe" must be a string, so it needs quotes
+        let l = "Joe";
+
+        // Fixed: Array is properly defined
+        const arr = [3, 5, 7];
+
+        // Fixed: Conditional statements are valid and strings are quoted
+        if (i < j) {
+            console.log("i is less than j");
+        } else if (j > k) {
+            console.log("j is greater than k");
+        } else {
+            // Fixed: Missing quotation mark was added
+            console.log("j");
+        }
+
+        // Fixed: Loop now uses arr.length instead of a hardcoded number
+        // This prevents out-of-bounds errors if the array size changes
+        for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+        }
+    </script>
+</body>
+</html>
